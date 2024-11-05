@@ -26,9 +26,9 @@ A data connection is essential to pull, manage, and utilize information effectiv
 ## Step 2: Tackeling the Task
 
 1) Recreate the screenshotted legacy report from the Excel file.
-     - Column 1............Contains the month and year of first purchase. We have to create a new column and Format the date to "MMM-YY".
-     - Column 2............Contains Unique Customer. No Dax is required, simply select the key and select "Count Distinct".
-     - Column 3/4........Gives you the percentage of customers returning after their first initial purchase, 0 to 90, and 91-180. I used a Dax Formula to give you that information.  
+     - Column 1 contains the month and year of first purchase. We have to create a new column and Format the date to "MMM-YY".
+     - Column 2 contains Unique Customer. No Dax is required, simply select the key and select "Count Distinct".
+     - Column 3-4 gives you the percentage of customers returning after their first initial purchase between a certain range. I used a Dax Formula to pull that information.  
 ```
 DistinctCustomersWithin90Days = 
 VAR MSRMENT =
